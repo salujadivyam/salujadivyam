@@ -1,6 +1,9 @@
 Greetings, I'm Divyam
+
 I mostly work with Python, for ML, DA, Cloud and automation
+
 Reach me out on linkedin: https://linkedin.com/in/salujadivyam
+
 Fun fact: My personal best score in bowling is 200
 
 <!---
