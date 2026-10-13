@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/REPOSITORIES-GITHUB-B9A3E3?style=for-the-badge&logo=github&logoColor=26262b&labelColor=26262b" alt="GitHub repositories" />
+  <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fsalujadivyam&query=%24.public_repos&label=REPOSITORIES&style=for-the-badge&labelColor=26262b&color=B9A3E3" alt="Public repositories" />
   <img src="https://komarev.com/ghpvc/?username=salujadivyam&style=for-the-badge&color=B9A3E3&label=PROFILE%20VIEWS&labelColor=26262b" alt="Profile views" />
 </p>
 
