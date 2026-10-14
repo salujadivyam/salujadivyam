@@ -1,0 +1,53 @@
+
+name: Update Profile Assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Create assets directory
+        run: mkdir -p assets
+
+      - name: Generate GitHub stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=salujadivyam&show_icons=true&hide_border=true&bg_color=111713&title_color=4ADE80&text_color=C9D1D9&icon_color=86EFAC&ring_color=4ADE80
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate language card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=salujadivyam&layout=compact&langs_count=8&hide_border=true&bg_color=111713&title_color=4ADE80&text_color=C9D1D9
+          path: assets/langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: salujadivyam
+          outputs: |
+            assets/contrib-dark.svg?color_snake=%234ADE80&color_dots=%23111713,%23183D2B,%232A6B45,%234ADE80,%2386EFAC
+
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/langs.svg assets/contrib-dark.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "Update profile statistics"
+          git push
