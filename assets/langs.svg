@@ -140,7 +140,7 @@
           y="0"
           width="108.18"
           height="8"
-          fill="#DA5B0B"
+          fill="#4ADE80"
         />
       
         <rect
@@ -207,7 +207,7 @@
     <g transform="translate(0, 25)">
       <g transform="translate(0, 0)"><g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#DA5B0B" />
+      <circle cx="5" cy="6" r="5" fill="#4ADE80" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
         Jupyter Notebook 43.27%
       </text>
