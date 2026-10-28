@@ -53,7 +53,7 @@ A wildlife tracking platform for 149 simulated tigers in Nagarahole Tiger Reserv
 ### [SpoilFree](https://github.com/salujadivyam/spoilfree)
 
 <a href="https://github.com/salujadivyam/spoilfree">
-<img src="https://raw.githubusercontent.com/salujadivyam/spoilfree/main/spoilfree.png" width="100%" alt="SpoilFree project preview">
+<img src="https://raw.githubusercontent.com/salujadivyam/spoilfree/main/images/Spoilfree-02.png" width="100%" alt="SpoilFree project preview">
 </a>
 
 A Chrome extension designed to detect and blur spoilers, helping users browse content without accidentally revealing plot details.
