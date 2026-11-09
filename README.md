@@ -96,15 +96,6 @@ An ultimate candidate-screening platform featuring hybrid semantic and keyword m
 <tr>
 <td width="50%" valign="top">
 
-### [CrewAI Interview Simulator](https://github.com/salujadivyam/crewai-interview-simulator)
-
-An AI-powered interview simulation project built around multi-agent workflows.
-
-[View Repository →](https://github.com/salujadivyam/crewai-interview-simulator)
-
-</td>
-<td width="50%" valign="top">
-
 ### [n8n Research Paper Reader](https://github.com/salujadivyam/n8n-research-paper-reader)
 
 An automated research-paper workflow integrating the arXiv API with Airtable to retrieve and organize research papers.
